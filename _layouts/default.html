@@ -1,17 +1,16 @@
 <html>
 	<head>
 		<title>Jekyll Test Website</title>
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/common.css"></link>
 	</head>
 	<body>
 		<header>
 			<h1>Planets of the Universe</h1>
 		</header>
-		<nav>
-			<ul>
-				<li><a href="{{site.baseurl}}/index.html">Home</a></li>
-				<li><a href="{{site.baseurl}}/news.html">News</a></li>
-			</ul>
-		</nav>
+		{% include nav.html navclass='nav-top' %}
 		{{content}}
 	</body>
+	<footer>
+		{% include nav.html navclass='nav-bottom' %}
+	</footer>
 </html>

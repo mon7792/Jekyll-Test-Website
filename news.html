@@ -3,3 +3,12 @@ layout: default
 ---
 
 <h1>News</h1>
+
+<ul>
+	{% for ne in site.data.news %}
+	<li>
+		<a href="">{{ ne.title }}</a>
+		<p>{{ ne.meta }}</p>
+	</li>
+	{% endfor %}
+</ul>
