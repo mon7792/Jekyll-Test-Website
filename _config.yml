@@ -1,3 +1,4 @@
 markdown: redcarpet
 baseurl: /Jekyll-Test-Website
 exclude: ['README.md']
+permalink: pretty

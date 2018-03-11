@@ -8,6 +8,7 @@ layout: default
 	{% for ne in site.data.news %}
 	<li>
 		<a href="">{{ ne.title }}</a>
+		<img src="{{site.baseurl}}/img/faceshot/{{ne.img}}" alt="Smiley face" height="42" width="42">
 		<p>{{ ne.meta }}</p>
 	</li>
 	{% endfor %}
